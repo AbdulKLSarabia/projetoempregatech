@@ -26,7 +26,8 @@ header #menu {
 }
 header .menu1{
     list-style:none;
-    float:left;
+    position: relative;
+    top: 10%;  
  
 }
 
@@ -36,7 +37,7 @@ header .menu1 li a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-size: 1em;
     text-shadow: #05503798 1px 1px 1px;
@@ -51,6 +52,8 @@ header .menu1 li  ul{
     top:20px;
     left:40px;
     display:none;
+    background-color: rgb(197, 230, 218);
+
 }
 
 header .menu1 li:hover ul, .menu li.over ul{
@@ -73,9 +76,11 @@ header #contato {
     
 }
 header #contato img{
+    
     margin-right: 5px;
-}
+    
 
+}
 /*===== Div header Logotipo =====*/
 .cab1{
     width: 22%;
@@ -106,6 +111,8 @@ header #contato img{
     background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   
+
 }
 .subtitulo{
     text-align: center;
@@ -197,36 +204,60 @@ section {
     
 }
 /* === CADASTRO === */
-#contato {
+.contato {
+   
     padding-top: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.534);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(90deg, rgba(29, 115, 115, 0.00) -0.94%, rgba(0, 0, 0, 0.00) 50%), linear-gradient(180deg, rgba(16, 115, 97, 0.25) 0%, rgba(29, 115, 115, 0.99) 49.48%, rgba(29, 115, 115, 0.37) 100%);
+    
     
 }
-#contato h1 {
+.contato h1 {
     font-size: 1.5em;
     margin: 10px;
-    color: rgba(0, 0, 0, 0.687);
+    color: whitesmoke;
 }
-#contato p{
+.contato p{
     font-size: 1em;
     margin-bottom: 30px;
-    color: rgba(0, 0, 0, 0.721);
+    color: rgb(245, 245, 245);
     margin-left: 10px;
     
 }
-#contato a {
+.contato a {
     text-decoration: none;
     
 }
 .login {
-     width: 350px;
+     width: 20%;
+     text-align: center;
+     border: 2px solid black;
+     padding: 10px;
+     border-bottom: none;
+     border-radius: 10px 10px 0 0;
+     background: rgba(0, 0, 0, 0.418);
+}
+.login input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 .cadastrar {
-     width: 350px;
+     width: 20%;
+     text-align: center;
+     margin-bottom: 50px;
+     border: 2px solid black;
+     padding: 10px;
+     border-top: none;
+     border-radius: 0 0 10px 10px;
+     background: rgba(0, 0, 0, 0.479);
 }
-#contato button {
+.contato button {
     font-size: 1.5em;
     width: 100%;
     border-radius: 10px;
@@ -235,6 +266,7 @@ section {
     background-color: green;
     border: 2px solid green;
     color: white;
+    width: 50%;
 }
 .login a {
     text-decoration: none;

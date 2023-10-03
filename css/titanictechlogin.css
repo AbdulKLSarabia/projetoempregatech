@@ -6,15 +6,10 @@
 }
 body{
     width: 100%;
-    background-color: rgb(4, 4, 4);
+    background-color: black;
     height: 2000px;
     margin: 0;
     padding: 0;
-}
-header {
-    background-color: black;
-    height: 430px;
-    margin-bottom: 30px;
 }
 /* ==== Header ==== */
 header .bg-gradiente {
@@ -32,7 +27,7 @@ header #menu {
 header .menu1{
     list-style:none;
     position: relative;
-    top: 10%;
+    top: 10%;    
  
 }
 
@@ -46,9 +41,9 @@ header .menu1 li a{
     text-transform: uppercase;
     font-size: 1em;
     text-shadow: #05503798 1px 1px 1px;
-    
 }
-header .menu1 li a:hover{    
+header .menu1 li a:hover{
+
 color:#023c29;
 text-shadow:0px 0px 1px #ffffffec;
 }
@@ -79,13 +74,12 @@ header #contato {
     margin-right: 20px;
     
 }
-header #contato h3{
-    color: #ffffff8e;
-}
 header #contato img{
+    
     margin-right: 5px;
-}
+    
 
+}
 /*===== Div header Logotipo =====*/
 .cab1{
     width: 22%;
@@ -94,17 +88,18 @@ header #contato img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .cab1 div{
     margin: 10%;
 }
-
 /*===== Div header Titulo =====*/
 .cab2{
     width: 56%;
     height: 300px;
     float: left;
-} 
+    
+}
 .titulo{
     font-size: 6.5em;
     text-align: center;
@@ -115,6 +110,8 @@ header #contato img{
     background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   
+
 }
 .subtitulo{
     text-align: center;
@@ -126,6 +123,7 @@ header #contato img{
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
+
 
 /* ===== Div header contato ===== */
 .cab3 {
@@ -146,6 +144,17 @@ header #contato img{
     margin: 10px;
 } 
 
+.fgratis{
+    color: rgba(255, 255, 255, 0.651);
+    background-color: #279f9f80;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10%;
+    align-items: center;
+}   
+
+
 /* ===== Barra Menu Pesquisa ===== */
 .barramenu{
     clear: both;
@@ -155,157 +164,150 @@ header #contato img{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  
+}/* ==== campo de pesquisa ==== */
 
-/* ==== campo de pesquisa ==== */
 .barramenu input{
-     width: 600px;
+    width: 600px;
     height: 50px;
     padding: 0.7em;
     border-radius: 10px;
     font-size: 1.5em;
     margin: 5px;
     margin-left: 50px;
-} 
+}
 .barramenu button img {
     background: none;
     margin-left: 10px;
 }
 
+/*===== Main Papel de parede ===== */
+main{
+    
+    max-width: 100%;
+    background-image: url(../imagens/pexels-blaque-x-932638.jpg);
+    background-size: cover;
+    background-position: center;
 
+}
 /* ==== Section ==== */
 section {
     clear: both;
     height: 1350px;
     background-color: white;
     max-width: 100%;
-}
-article {
-    width: 100%;
-    height: 650px;
-    margin: 15px;
-    padding: 30px;
-}
-.produto {
-    display: flex;
-    flex-flow: row;
-    margin-top: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+    
     
 }
-
-/* === Miniaturas de imagens === */
-.smallpicture{
+/* === CADASTRO === */
+.contato {
+   
+    padding-top: 100px;
     display: flex;
-    flex-flow: column;
-    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.534);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(90deg, rgba(29, 115, 115, 0.00) -0.94%, rgba(0, 0, 0, 0.00) 50%), linear-gradient(180deg, rgba(16, 115, 97, 0.25) 0%, rgba(29, 115, 115, 0.99) 49.48%, rgba(29, 115, 115, 0.37) 100%);
+    
+    
 }
-.smallpicture div {
-    flex-flow: column;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+.contato h1 {
+    font-size: 1.5em;
+    margin: 10px;
+    color: whitesmoke;
 }
-.smallpicture div:hover {
-    width: 500px;
-    position: absolute;
-    margin-left: 200px;
-}
-
-/* === Imagem produto === */
-.produto img {
-    width: 100%;
- }
-.bigpicture {
-    width: 550px;
-}
-/* ==== Descrição do produto */ 
-.texto {
-    width: 50%;
-    height: 500px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    font-size: 2em;
-}
-.texto h1 {
-    text-align: justify;
-}
-.texto h4 {
-    color: red;
-}
-.texto h2, h3 {
-    color: #099f0e;
-}
-.comprar {
-    background-color: #099f0e;
-    height: 50px;
+.contato p{
     font-size: 1em;
-    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgb(245, 245, 245);
+    margin-left: 10px;
+    
+}
+.contato a {
+    text-decoration: none;
+    
+}
+.login {
+     width: 33%;
+     text-align: center;
+     border: 2px solid black;
+     padding: 10px;
+     border-bottom: none;
+     border-radius: 10px 10px 0 0;
+     background: rgba(0, 0, 0, 0.418);
+}
+.login input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.cadastrar {
+     width: 33%;
+     text-align: center;
+     margin-bottom: 50px;
+     border: 2px solid black;
+     padding: 10px;
+     border-top: none;
+     border-radius: 0 0 10px 10px;
+     background: rgba(0, 0, 0, 0.479);
+}
+.contato button {
+    font-size: 1.5em;
+    width: 100%;
+    border-radius: 10px;
+}
+.login button {
+    background-color: green;
+    border: 2px solid green;
+    color: white;
+    width: 50%;
+}
+.login a {
+    text-decoration: none;
     color: white;
 }
-.comprar:hover{
+.cadastrar a {
+    text-decoration: none;
+    color: green;
+}
+.login button:hover {
     background-color: white;
-    color: #099f0e;
-    border: none;
+    border: 2px solid green;
+    color: green;
 }
-/* === Frete === */
-.frete {
-    font-size: 0.5em;
-    height: 20px;
+.login a:hover {
+    text-decoration: none;
+    color: green;
 }
-.frete h5 {
-    margin-left: 10px;
-    font-size: 1em;
-
+.cadastrar a:hover {
+    text-decoration: none;
+    color: white;
 }
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-    
+.cadastrar button {
+    background-color: white;
+    border: 2px solid green;
+    color: green;
 }
-.freteicon {
-    display: flex;
+.cadastrar button:hover {
+    background-color: green;
+    border: 2px solid green;
+    color: white;
 }
-.frete span {
-    border: 1px solid black;
-    height: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px;
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
-}
-.frete input {
-    border: none;
-}
-.cep {
-    
-    border: none;
-    background: none;
-}
-.cep:hover {
-    color: red;
-}
-
-/* === Banner === */
-
 .banner {
-   margin-left: 0;
+    margin-top: 20%;
 }
-
-
 /*===== Footer =====*/
 footer{
-    
     width: 100%;
     padding: 20px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.573) 100%), linear-gradient(90deg, rgba(29, 115, 115, 0.00) -0.94%, rgba(0, 0, 0, 0.00) 49.47%), linear-gradient(180deg, rgba(16, 115, 97, 0.218) 0%, rgba(29, 115, 115, 0.99) 38.02%);
     color: #ffffff8e;
+         
 }
 .footerheader {
     color: #279f9f80;
@@ -317,7 +319,7 @@ footer{
     text-align: center;
     padding: 20px;
     margin: 20px;
-}  
+}
 
 .finput {
     margin-top: 30px;
@@ -335,6 +337,7 @@ ul {
 }
 .footer01 {
     width: 30%;
+
 }
 .footer01 h2 {
     margin-left: 13%;
@@ -360,8 +363,7 @@ li p {
     max-width: 350px;
     margin: auto;
     text-align: center;
-   
-}
+} 
 
 #register p {
     font-size: 1.5em;
@@ -390,7 +392,6 @@ li p {
     color: #fff;
     padding: 0.75em;
     font-size: 1.2em;
-
 }
 
 .footer03 {
@@ -413,14 +414,10 @@ li p {
     position: relative;
     margin-bottom: 5%;
     
-    
 }
 .boxmap iframe{
     width: 100%;
     height: 100%;
-}
-.rodape {
-    text-align: center;
 }
 
 @media(max-width:900px){
