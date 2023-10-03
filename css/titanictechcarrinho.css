@@ -1,44 +1,44 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
+
 }
-body{
+
+body {
     width: 100%;
-    background-color: rgb(4, 4, 4);
+    background-color: black;
     height: 2000px;
     margin: 0;
     padding: 0;
 }
-header {
-    background-color: black;
-    height: 430px;
-    margin-bottom: 30px;
-}
+
 /* ==== Header ==== */
 header .bg-gradiente {
     min-height: 90px;
     width: 100%;
-    
+
 }
-header .header-border{
+
+header .header-border {
     display: flex;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(90deg, rgba(29, 115, 115, 0.00) -0.94%, rgba(0, 0, 0, 0.00) 50%), linear-gradient(180deg, rgba(16, 115, 97, 0.25) 0%, rgba(29, 115, 115, 0.99) 49.48%, rgba(29, 115, 115, 0.37) 100%);
 }
+
 header #menu {
     flex: 1;
 }
-header .menu1{
-    list-style:none;
+
+header .menu1 {
+    list-style: none;
     position: relative;
     top: 10%;
- 
+
 }
 
 /* ==== Cria menu Sanduiche ==== */
-header .menu1 li a{
-    display:block;
+header .menu1 li a {
+    display: block;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -46,27 +46,31 @@ header .menu1 li a{
     text-transform: uppercase;
     font-size: 1em;
     text-shadow: #05503798 1px 1px 1px;
-    
 }
-header .menu1 li a:hover{    
-color:#023c29;
-text-shadow:0px 0px 1px #ffffffec;
+
+header .menu1 li a:hover {
+
+    color: #023c29;
+    text-shadow: 0px 0px 1px #ffffffec;
 }
-header .menu1 li  ul{
-    position:absolute;
-    top:20px;
-    left:40px;
-    display:none;
+
+header .menu1 li ul {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    display: none;
     background-color: rgb(197, 230, 218);
+
 }
 
-header .menu1 li:hover ul, .menu li.over ul{
-    display:block;
+header .menu1 li:hover ul,
+.menu li.over ul {
+    display: block;
 }
 
-header .menu li ul li{
-    display:block;
-    width:150px;
+header .menu li ul li {
+    display: block;
+    width: 150px;
 }
 
 /* ==== contatos ==== */
@@ -77,55 +81,59 @@ header #contato {
     font-size: 1.2em;
     margin-top: 15px;
     margin-right: 20px;
-    
+
 }
-header #contato h3{
-    color: #ffffff8e;
-}
-header #contato img{
+
+header #contato img {
     margin-right: 5px;
 }
 
 /*===== Div header Logotipo =====*/
-.cab1{
+.cab1 {
     width: 22%;
     height: 300px;
     float: left;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
-.cab1 div{
+
+.cab1 div {
     margin: 10%;
 }
 
 /*===== Div header Titulo =====*/
-.cab2{
+.cab2 {
     width: 56%;
     height: 300px;
     float: left;
-} 
-.titulo{
+
+}
+
+.titulo {
     font-size: 6.5em;
     text-align: center;
     font-family: Keania One;
     margin-left: 0;
     margin: 4%;
-    background-image: linear-gradient(to top,#040e0ec2,#279f9f8e, #3cf8f8e1);
+    background-image: linear-gradient(to top, #040e0ec2, #279f9f8e, #3cf8f8e1);
     background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.subtitulo{
+
+.subtitulo {
     text-align: center;
     font-size: 2em;
     font-family: Keania One;
     margin: 2%;
-    background-image: linear-gradient(to top,#040e0ec2,#279f9f8e, #3cf8f8e1);
+    background-image: linear-gradient(to top, #040e0ec2, #279f9f8e, #3cf8f8e1);
     background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /* ===== Div header contato ===== */
 .cab3 {
@@ -133,180 +141,260 @@ header #contato img{
     display: flex;
     width: 22%;
     height: 300px;
-    justify-content: center;/*Alinha na horizontal*/
-    align-items: center; /*flex-end | flex-start | strecth | center */
+    justify-content: center;
+    /*Alinha na horizontal*/
+    align-items: center;
+    /*flex-end | flex-start | strecth | center */
     align-content: center;
     flex-wrap: wrap;
 }
+
 .cab3 div {
     height: 100px;
 }
+
 .cab3 img {
     float: left;
     margin: 10px;
-} 
+}
+
+.fgratis {
+    color: rgba(255, 255, 255, 0.651);
+    background-color: #279f9f80;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10%;
+    align-items: center;
+}
+
 
 /* ===== Barra Menu Pesquisa ===== */
-.barramenu{
+.barramenu {
     clear: both;
-    max-width:100%;
+    max-width: 100%;
     height: 90px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(90deg, rgba(29, 115, 115, 0.00) -0.94%, rgba(0, 0, 0, 0.00) 50%), linear-gradient(180deg, rgba(16, 115, 97, 0.25) 0%, rgba(29, 115, 115, 0.99) 49.48%, rgba(29, 115, 115, 0.37) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* ==== campo de pesquisa ==== */
-.barramenu input{
-     width: 600px;
+
+.barramenu input {
+    width: 600px;
     height: 50px;
     padding: 0.7em;
     border-radius: 10px;
     font-size: 1.5em;
     margin: 5px;
     margin-left: 50px;
-} 
+}
+
 .barramenu button img {
     background: none;
     margin-left: 10px;
 }
 
+/*===== Main Papel de parede ===== */
+main {
+    max-width: 100%;
+    background-image: url(../imagens/pexels-blaque-x-932638.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-/* ==== Section ==== */
+/* === CARRINHO === */
 section {
     clear: both;
     height: 1350px;
     background-color: white;
     max-width: 100%;
-}
-article {
-    width: 100%;
-    height: 650px;
-    margin: 15px;
-    padding: 30px;
-}
-.produto {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
     display: flex;
-    flex-flow: row;
-    margin-top: 50px;
-    
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+
 }
 
-/* === Miniaturas de imagens === */
-.smallpicture{
+.item {
     display: flex;
-    flex-flow: column;
-    width: 100px;
-}
-.smallpicture div {
-    flex-flow: column;
-    width: 100px;
-    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 150px;
     margin-bottom: 10px;
 }
-.smallpicture div:hover {
-    width: 500px;
-    position: absolute;
-    margin-left: 200px;
+
+article .imagem {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0 5px 0 5px;
 }
 
-/* === Imagem produto === */
-.produto img {
-    width: 100%;
- }
-.bigpicture {
-    width: 550px;
+article .descricao {
+    width: 300px;
+    height: 70px;
+    margin: 20px 5px 0 5px;
+    font-size: 1.3em;
 }
-/* ==== Descrição do produto */ 
-.texto {
-    width: 50%;
-    height: 500px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    font-size: 2em;
-}
-.texto h1 {
-    text-align: justify;
-}
-.texto h4 {
-    color: red;
-}
-.texto h2, h3 {
-    color: #099f0e;
-}
-.comprar {
-    background-color: #099f0e;
+
+article input {
+    width: 50px;
     height: 50px;
+    text-align: center;
+    margin: 25px 5px 25px 5px;
+    border-radius: 10px;
     font-size: 1em;
-    font-weight: bold;
+
+}
+
+article .valor {
+    width: 100px;
+    height: 35px;
+    margin: 35px 0 20px 5px;
+    font-size: 1.2em;
+}
+
+.remover button {
+    width: 100px;
+    height: 33px;
+    margin-top: 30%;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+
+}
+
+.remover button:hover {
+    background-color: rgb(120, 23, 23);
     color: white;
 }
-.comprar:hover{
-    background-color: white;
-    color: #099f0e;
-    border: none;
-}
-/* === Frete === */
-.frete {
-    font-size: 0.5em;
-    height: 20px;
-}
-.frete h5 {
-    margin-left: 10px;
-    font-size: 1em;
 
-}
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-    
-}
-.freteicon {
+.pagamento {
     display: flex;
-}
-.frete span {
-    border: 1px solid black;
-    height: 20px;
-    display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
-    margin: 10px;
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
-}
-.frete input {
-    border: none;
-}
-.cep {
-    
-    border: none;
-    background: none;
-}
-.cep:hover {
-    color: red;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(230, 225, 225);
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.463);
 }
 
-/* === Banner === */
-
-.banner {
-   margin-left: 0;
+article .subtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+    width: 100%;
+    height: 30px;
+    margin: 25px 3px 5px 3px;
+    padding: 5px;
 }
+
+article .frete {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+article .desconto {
+    width: 100%;
+    height: 30px;
+    margin: 5px 3px 5px 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+article .total {
+    width: 100%;
+    height: 30px;
+    margin: 5px 3px 5px 3px;
+    background-color: rgb(161, 242, 161);
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5em;
+
+}
+
+article .parcelado {
+    width: 95%;
+    height: 30px;
+    margin: 5px 3px 5px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+    border-bottom: 2px solid black;
+}
+
+article .avista {
+    width: 95%;
+    height: 30px;
+    margin: 5px 3px 5px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+    border-bottom: 2px solid black;
+    ;
+}
+
+article .fecharpedido {
+    width: 100%;
+    height: 30px;
+    margin: 5px 3px 5px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+article .fecharpedido button {
+    width: 100%;
+    font-size: 1em;
+    color: rgb(29, 29, 29);
+}
+
+article .fecharpedido button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
 
 
 /*===== Footer =====*/
-footer{
-    
+footer {
+
     width: 100%;
     padding: 20px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.573) 100%), linear-gradient(90deg, rgba(29, 115, 115, 0.00) -0.94%, rgba(0, 0, 0, 0.00) 49.47%), linear-gradient(180deg, rgba(16, 115, 97, 0.218) 0%, rgba(29, 115, 115, 0.99) 38.02%);
     color: #ffffff8e;
+
 }
+
 .footerheader {
     color: #279f9f80;
     font-family: Keania One;
@@ -317,7 +405,7 @@ footer{
     text-align: center;
     padding: 20px;
     margin: 20px;
-}  
+}
 
 .finput {
     margin-top: 30px;
@@ -329,50 +417,59 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+
 ul {
     list-style: none;
     font-weight: bold;
 }
+
 .footer01 {
     width: 30%;
+
 }
+
 .footer01 h2 {
     margin-left: 13%;
 }
+
 li {
     margin: 20px;
 }
+
 li p {
     margin: -5px;
 }
+
 .footer02 {
     width: 40%;
 }
+
 .footer02 div {
     text-align: center;
 }
 
 /* === Formulário Footer === */
 #register {
-    
+
     width: 80%;
     height: 300px;
     max-width: 350px;
     margin: auto;
     text-align: center;
-   
 }
 
 #register p {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 30px;
-    
+
 }
-#register .field{
+
+#register .field {
     width: 100%;
     margin-bottom: 20px;
 }
+
 #register input {
     width: 100%;
     padding: 0.7em;
@@ -380,9 +477,10 @@ li p {
     border: 1px solid #ccc;
 }
 
-#register input[type=radio]{
+#register input[type=radio] {
     width: 25px;
 }
+
 #register button {
     width: 100%;
     border: none;
@@ -390,7 +488,6 @@ li p {
     color: #fff;
     padding: 0.75em;
     font-size: 1.2em;
-
 }
 
 .footer03 {
@@ -400,61 +497,71 @@ li p {
     align-items: center;
     flex-direction: column;
 }
+
 .footer03 h2 {
     margin-bottom: 20px;
 }
+
 .footer03 p {
     margin-bottom: 20px;
 }
+
 .boxmap {
     width: 85%;
     height: 180px;
     background-color: white;
     position: relative;
     margin-bottom: 5%;
-    
-    
+
 }
-.boxmap iframe{
+
+.boxmap iframe {
     width: 100%;
     height: 100%;
 }
+
 .rodape {
     text-align: center;
 }
 
-@media(max-width:900px){
-    .titulo{
+@media(max-width:900px) {
+    .titulo {
         font-size: 3.5em;
     }
-    .subtitulo{
+
+    .subtitulo {
         text-align: center;
         font-size: 1em;
     }
+
     header .bg-gradiente {
         min-height: 45px;
         width: 100%;
     }
+
     header #contato {
         display: none;
     }
 
-    .cab1{
+    .cab1 {
         display: none;
         height: 150px;
         margin: 0;
     }
-    .cab2{
+
+    .cab2 {
         height: 150px;
         width: 90%;
     }
-    .cab3{
+
+    .cab3 {
         display: none;
         height: 150px;
         width: 0;
         margin: 0;
     }
-    .barramenu input{
+
+    .barramenu input {
         width: 300px;
         height: 30px;
         padding: 0.7em;
@@ -463,19 +570,24 @@ li p {
         margin: 5px;
         margin-left: 50px;
     }
+
     .footermain {
         display: flex;
         flex-direction: column;
-        
-    
+
+
     }
+
     .footer01 {
         width: 100%;
-    }.footer02 {
+    }
+
+    .footer02 {
         width: 100%;
     }
+
     .footer03 {
         width: 100%;
     }
-  
+
 }

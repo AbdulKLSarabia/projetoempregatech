@@ -10,25 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imagens/icones/favicon.ico" type="image/x-icon">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
 </head>
-<body>
+<body style="background-color: black;">
     <header>
         <div class="bg-gradiente">
             <div class="header-border">
                 <nav id="menu">
                     <ul class="menu1"><!-- li*3>a -->
-                        <li><a href="index.html"><img src="imagens/🦆 icon _menu 1_.png" alt="" width="50px"></a>
+                        <li><a href="index.html"><img src="assets/imagens/icones/🦆 icon _menu 1_.png" alt="" width="50px"></a>
                             <ul>
                                 <li><a href="index.html" target="_parent">Home</a></li>
                                 <li><a href="login.html" target="_parent">Login</a></li>
                                 <li><a href="cadastro.html" target="_parent">Cadastre-se</a></li>
                                 <li><a href="produtos.html" target="_parent">Produtos</a></li>
                                 <li><a href="contato.html" target="_parent">Contato</a></li>
-                                <li><a href="sobre_nos.html" target="_parent">Sobre nós</a></li>
+                               
                                 
                             </ul>
+                        </li>
+                                    
+
+                    </ul>
                         </li>
                                     
 
@@ -38,10 +54,10 @@
 
                 <div id="contato">
                     <div>
-                        <a href="https://www.facebook.com/" target="_blank"><img src="imagens/icons8-facebook-48.png" alt="Facebook" max-width="45px"></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="imagens/icons8-instagram-48.png" alt="Instagran" max-width="45px"></a>
-                        <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img src="imagens/icons8-whatsapp-48.png" alt="teletone" max-width="45px"></a>
-                        <img src="imagens/telefone2.png" alt="" width="45px">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/imagens/icones/icons8-facebook-48.png" alt="Facebook" max-width="45px"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="assets/imagens/icones/icons8-instagram-48.png" alt="Instagran" max-width="45px"></a>
+                        <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img src="assets/imagens/icones/icons8-whatsapp-48.png" alt="teletone" max-width="45px"></a>
+                        <img src="assets/imagens/icones/telefone2.png" alt="" width="45px">
                         
                     </div>
                     <div><h3>(43)</h3></div>
@@ -51,32 +67,26 @@
         </div><!-- criar gradiente -->
 
         <div class="cab1"><!-- Div para a colocação da Logo -->
-            <div><img src="imagens/logo.png" alt="Logotipo da Marca" max-width="250px"></div>
+            <a href="index.html">
+                <div><img src="assets/imagens/logo.png" alt="Logotipo da Marca" max-width="250px"></div>
+            </a>
         </div>
 
         <div class="cab2"><!-- Área central do Header com o Título da Loja-->
           <h1 class="titulo">TITANICTECH</h1>
-          <h3 class="subtitulo">Aqui só os preços afundam...</h3>
+          <h3 class="subtitulo">Aqui só os preços não caem, afundam...</h3>
            
         </div>
         
         <div class="cab3">
-           <!-- <div>
-                
-               
+
+            <div>
+                <a href="login.html"><img src="assets/imagens/icones/🦆 icon _profile circle_.png" alt="pagina de login" max-width="45px"></a>
+                <!-- <a href="">OLÁ, Entre,</a>
+                <a href="">ou Cadastre-se</a> -->
+                <a href="contato.html"><img src="assets/imagens/icones/🦆 icon _message_.png" alt="aba de contatos"max-width="45px"></a>
+                <a href="carrinho.html"><img src="assets/imagens/icones/🦆 icon _shopping cart_.png" alt="carrinho de compras"max-width="45px"></a>
             </div>
-            <div class="fgratis">
-                <h1>Frete Grátis</h1>
-                <p>Nas compras acima de R$999,00</p>
-            </div>  -->
-            
-                <div>
-                    <a href="login.html"><img src="imagens/🦆 icon _profile circle_.png" alt="pagina de login" max-width="45px"></a>
-                    <!-- <a href="">OLÁ, Entre,</a>
-                    <a href="">ou Cadastre-se</a> -->
-                    <a href="contato.html"><img src="imagens/🦆 icon _message_.png" alt="aba de contatos"max-width="45px"></a>
-                    <a href="carrinho.html"><img src="imagens/🦆 icon _shopping cart_.png" alt="carrinho de compras"max-width="45px"></a>
-                </div>
                 <div>
                    
                 </div>
@@ -84,56 +94,87 @@
 
         <div class="barramenu">
             <div>
-                
-                <input type="search" placeholder="Pesquise o seu produto"></div>
-                <a href=""><img src="imagens/icons8-pesquisa-48.png" alt=""></a>
-            
-           
+                <input type="search" placeholder="Pesquise o seu produto">
+            </div>
+            <a href=""><img src="assets/imagens/icones/icons8-pesquisa-48.png" alt=""></a>
 
         </div>
         
     </header>
     
     <main>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/imagens/banners/bannercadeira2.jpg" alt="Los Angeles" width="1100" height="500">
+                <div class="carousel-caption">
+                 
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imagens/banners/bannerdesktop3.jpg" alt="Chicago" width="1100" height="500">
+                <div class="carousel-caption">
+                
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imagens/banners/bannermouse.jpg" alt="New York" width="1100" height="500">
+                <div class="carousel-caption">
+                 
+                </div>   
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
         <section>
             <article class="produto">
                
-                <a href="cadeiras.html">
+                <a href="cadeiras/cadeiras.html">
                     <div class="produto1">
                         <h1>Cadeiras</h1>
                     
                         <div class="bigpicture">
-                            <img src="imagens/cadeiras/cadeira1-1.jpg" alt="" width="400px">
+                            <img src="assets/imagens/cadeiras/cadeira1-1.jpg" alt="" width="400px">
                         </div>
                     </div>
                 </a>
                     
-                <a href="desktops.html">
+                <a href="desktops/desktops.html">
                     <div class="produto2">
                         <h1>Desktops</h1>
                     
                         <div class="Desktops">
-                            <img src="imagens/desktops/desktop1.jpg" alt="" width="400px">
+                            <img src="assets/imagens/desktops/desktop1.jpg" alt="" width="400px">
                         </div>
                     </div>
                 </a>
                    
-                <a href="">
+                <a href="mouses/mouses.html">
                     <div class="produto3">
                         <h1>Mouses</h1>
                     
                         <div class="Mouses">
-                            <img src="imagens/mouses/mouse.jpg" alt="" width="400px">
+                            <img src="assets/imagens/mouses/mouse.jpg" alt="" width="400px">
                         </div>
                     
                     </div>
                 </a>
-                <a href="">
+                <a href="teclados/teclados.html">
                     <div class="produto4">
                         <h1>Teclados</h1>
                     
                         <div class="Teclados">
-                            <img src="imagens/teclados/teclado.jpg" alt="" width="400px">
+                            <img src="assets/imagens/teclados/teclado.jpg" alt="" width="400px">
                         </div>
                     
                     </div>
@@ -143,7 +184,7 @@
 
             <article>
                 <div class="banner">
-                    <img src="imagens/banners/bannercadeira.jpg" alt="" width="1800px">
+                    <img src="assets/imagens/banners/bannercadeira.jpg" alt="" width="1800px">
                 </div>
             </article>
             
@@ -157,29 +198,28 @@
     </main>
     
     <footer>
-       
 
         <div class="footermain">
             <div class="footer01">
                 <h2>Atendimento</h2>
                 <ul>
                     <li>
-                        <p><img src="imagens/telefone.png" alt="Watsapp" width="30px"></p><br
+                        <p><img src="assets/imagens/icones/telefone.png" alt="Watsapp" width="30px"></p><br
                         <p>Tel/Watsapp</p><br>
                         <p>(43)4004-1234</p>
                     </li>
                     <li>
-                        <p><img src="imagens/endereco.png" alt="endereco" width="30px"></p><br
+                        <p><img src="assets/imagens/icones/endereco.png" alt="endereco" width="30px"></p><br
                         <p>Endereço</p><br>
                         <p>Av.São João 200, Antares, Londrina-Pr</p>
                     </li>
                     <li>
-                        <p><img src="imagens/horariopng.png" alt="horario" width="30px"></p><br
+                        <p><img src="assets/imagens/icones/horariopng.png" alt="horario" width="30px"></p><br
                         <p>Horário</p><br>
                         <p>09:00hs ás 18:00hs de segunda à sexta.</p>
                     </li>
                     <li>
-                        <p><img src="imagens/email.png" alt="email" width="30px"></p><br>
+                        <p><img src="assets/imagens/icones/email.png" alt="email" width="30px"></p><br>
                         <p>vendas@titanictech@gmail.com</p>
                     </li>
                 </ul>
@@ -195,10 +235,10 @@
                     <button>Enviar</button>
                 </form>
                 <div>
-                    <img src="imagens/maestro-Six_Revisions.png" alt="cartaomaestro">
-                    <img src="imagens/mastercard-Six_Revisions.png" alt="cartaomastercard">
-                    <img src="imagens/visa-Six_Revisions.png" alt="cartaovisa">
-                    <img src="imagens/paypal-Six_Revisions.png" alt="paypal">
+                    <img src="assets/imagens/icones/maestro-Six_Revisions.png" alt="cartaomaestro">
+                    <img src="assets/imagens/icones/mastercard-Six_Revisions.png" alt="cartaomastercard">
+                    <img src="assets/imagens/icones/visa-Six_Revisions.png" alt="cartaovisa">
+                    <img src="assets/imagens/icones/paypal-Six_Revisions.png" alt="paypal">
                    
                 </div>
 
@@ -207,17 +247,16 @@
 
             <div class="footer03">
                 <h2>Como chegar em nossa loja</h2>
-                <p><img src="imagens/googlemaps.png" alt="mapa" width="100px"></p>
+                <p><img src="assets/imagens/icones/googlemaps.png" alt="mapa" width="100px"></p>
                 <div class="boxmap">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.946992419562!2d-51.14802592535219!3d-23.317681952683746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb437a8004ae75%3A0xfa2eace2a8798571!2sAv.%20S%C3%A3o%20Jo%C3%A3o%2C%20200%20-%20Jardim%20Lolata%2C%20Londrina%20-%20PR%2C%2086039-290!5e0!3m2!1spt-PT!2sbr!4v1695348690314!5m2!1spt-PT!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
+        <div class="rodape">
+            <p>Site desenvolvido por Alessandro & Abdul como atividade do módulo Front End, do curso Formação Java - Empregatech. Os preços anunciados na loja virtual são somente a título de ilustração. Os anúncios contidos nesta página são meramente ilustrativas .</p>
+        </div>
 
-    </div>
-    <div class="rodape">
-        <p>Site desenvolvido como atividade do módulo Front End, do curso Formação Java - Empregatech. Os preços anunciados na loja virtual são somente a título de ilustração. As fotos contidas nesta página são meramente ilustrativas .</p>
-    </div>
     </footer>
 </body>
 </html>

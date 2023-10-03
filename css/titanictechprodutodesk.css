@@ -6,13 +6,15 @@
 }
 body{
     width: 100%;
-    background-color: white;
+    background-color: rgb(4, 4, 4);
     height: 2000px;
     margin: 0;
     padding: 0;
 }
 header {
     background-color: black;
+    height: 430px;
+    margin-bottom: 30px;
 }
 /* ==== Header ==== */
 header .bg-gradiente {
@@ -29,7 +31,8 @@ header #menu {
 }
 header .menu1{
     list-style:none;
-    float:left;
+    position: relative;
+    top: 10%;    
  
 }
 
@@ -39,7 +42,7 @@ header .menu1 li a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-size: 1em;
     text-shadow: #05503798 1px 1px 1px;
@@ -54,6 +57,8 @@ header .menu1 li  ul{
     top:20px;
     left:40px;
     display:none;
+    background-color: rgb(197, 230, 218);
+
 }
 
 header .menu1 li:hover ul, .menu li.over ul{
@@ -126,6 +131,7 @@ header #contato img{
     background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   padding-bottom: 10px;
 }
 
 
@@ -147,26 +153,6 @@ header #contato img{
     float: left;
     margin: 10px;
 } 
-
-.fgratis{
-    color: rgba(255, 255, 255, 0.651);
-    background-color: #279f9f80;
-    border: 1px solid;
-    border-radius: 30px;
-    text-align: center;
-    margin: 10%;
-    align-items: center;
-    
-}
-.fgratis p{
-    font-size: 1em;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-.fgratis h1{
-    font-size: 3em;
-    margin: 0;
-}
 
 /* ===== Barra Menu Pesquisa ===== */
 .barramenu{
@@ -199,36 +185,19 @@ header #contato img{
     margin-left: 10px;
 }
 
-
-
-
-
-/*===== Main Papel de parede ===== */
-main{
-    
-    max-width: 100%;
-    background-color: #fff;
-   
-    background-size: cover;
-    background-position: center;
-
-}
 /* ==== Section ==== */
 section {
     clear: both;
     height: 1350px;
     background-color: white;
     max-width: 100%;
-    margin: 10px;
-    margin-bottom: 10px;
-    margin-top: 0;
-    
+       
 }
 article {
     width: 100%;
     height: 650px;
     margin: 15px;
-    padding: 30px;
+    padding: 50px;
 }
 .produto {
     display: flex;
@@ -244,11 +213,7 @@ article {
     margin-bottom: 2px;
     margin-right: -80px;
     position: absolute;
-   
-    
-   
-    
-}
+} 
 .smallpicture div {
     flex-flow: column;
     width: 110px;
@@ -258,17 +223,17 @@ article {
     margin-bottom: 5px;
     padding: 3px;
     border-radius: 10px;
-    
-    
-    
+}
+.smallpicture div:hover{
+    width: 500px;
+    position: absolute;
+    margin-left: 200px;
 }
 .smallpicture h4 {
     color: white;
-
 }
 .processador {
     color: blue;
-   
 }
 .memoria {
     color: rgb(133, 15, 242);
@@ -283,8 +248,8 @@ article {
 .bigpicture {
     width: 550px;
     
-    
-}/* ==== Descrição do produto */ 
+}
+/* ==== Descrição do produto */ 
 .texto {
     width: 50%;
     height: 500px;
